@@ -32,7 +32,6 @@ const Logged = () => {
       navigate('/')
       window.location.reload();
     })
-
   }
 
   return (

@@ -57,9 +57,12 @@ const Transactions = () => {
     }
   }, [user])
 
-  const desconect = () => {
-    navigateToHome()
+  const desconect = async () => {
     localStorage.clear()
+    setTimeout(() => {
+      navigate('/')
+      window.location.reload();
+    })
   }
 
   const dataDebited = []
@@ -241,7 +244,7 @@ const Transactions = () => {
                   </CreditedContent>
                 </TableOne>
                 <TableOne>
-                  <TitleOne>Valor</TitleOne>
+                  <TitleOne>Valor R$</TitleOne>
                   <ValueContent>      
                     {showJsx(dataValue, dataValueFilter, dataValueFilterCash, dataValueFilterCashOut)}
                   </ValueContent>

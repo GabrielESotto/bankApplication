@@ -60,7 +60,7 @@ export const TitleOne = styled.h1`
   }
 
   @media screen and (max-width: 500px) {
-      font-size: 10px;
+      font-size: 9px;
   }
 
   @media screen and (max-width: 400px) {
